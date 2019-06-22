@@ -1,0 +1,134 @@
+---
+layout: page
+permalink: /servicios/bases-de-datos
+---
+
+{% assign estados='AGUASCALIENTES,BAJA CALIFORNIA,BAJA CALIFORNIA SUR,CAMPECHE,CHIAPAS,CHIHUAHUA,CIUDAD DE MÉXICO,COAHUILA DE ZARAGOZA,COLIMA,DURANGO,GUANAJUATO,GUERRERO,HIDALGO,JALISCO,MICHOACÁN DE OCAMPO,MORELOS,MÉXICO,NAYARIT,NUEVO LEÓN,OAXACA,PUEBLA,QUERÉTARO,QUINTANA ROO,SAN LUIS POTOSÍ,SINALOA,SONORA,TABASCO,TAMAULIPAS,TLAXCALA,VERACRUZ DE IGNACIO DE LA LLAVE,YUCATÁN,ZACATECAS' | split: ',' %}
+
+{% assign cantidades='18794,32957,6459,24000,3744,3907,18666,3048,10712,7740,48783,12296,6976,8481,17065,10585,16271,3931,7837,3817,3463,8691,5345,7134,13991,9711,3923,4206,4722,11194,20814,8216,' | split: ',' %}
+
+
+<div id="page-head" class="container-fluid inner-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="page-title black" >Base de Datos Empresarial</div>
+                <div id="page-icon">
+                    <div class="pricing-icon">
+                        <img src="{{site.url}}/images/service-icon1.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="h-info" class="container-fluid">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="info-text grey-text">
+                Más de <strong>365,000 </strong> contactos empresariales de toda la República Mexicana y con actualización <strong>2019</strong>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<br>
+
+<div id="domain-quick-pricing" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="domain-box d-color1">
+                        <div class="title"><i class="far fa-address-book"></i></div>
+                        <div class="price">Detalles de Contacto</div>
+                        <div class="details">
+                            Incluye todo tipo de información como nombre de la empresa así como su entidad federativa
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="domain-box d-color2">
+                        <div class="title"><i class="far fa-envelope-open"></i></div>
+                        <div class="price">Correos electrónicos</div>
+                        <div class="details">
+                            Pensada para marketing por correo, este lista integra direcciones de correo electrónico de calidad
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="domain-box d-color3">
+                        <div class="title"><i class="fas fa-briefcase"></i></div>
+                        <div class="price">Actividad Empresarial</div>
+                        <div class="details">
+                            Incluye información sobre actividad económica para filtrar de acuerdo a los clientes a los que quieras llegar
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row-title grey-color">Detalles de la base de datos</div>
+            </div>
+        </div>
+            
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th ><strong>Entidad</strong></th>
+                            <th ><strong># Correos</strong></th>
+                            <!-- <th><strong>Ordenar</strong></th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for estado in estados %}
+                        <tr>
+                            <th>{{estados[forloop.index0]}}</th>
+                            <th><i>{{cantidades[forloop.index0]}}</i></th>
+                            <!-- <th><a href="" class="ybtn ybtn-accent-color">Comprar</a></th> -->
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div class="message-area ">
+                    <div class="col-sm-12 col-md-6">
+                            <div class="text-other-color1">Toda la lista por</div>
+                            <div class="text-other-color2">solamente <strong>$750 MXN</strong>*</div>
+                            <p>* por tiempo limitado</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="buttons-holder">
+                                <a href="#" class="ybtn ybtn-accent-color">Comprar ahora</a>
+                            </div>
+                        </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div id="message1" class="container-fluid message-area normal-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="text-other-color1">Are you ready?</div>
+                    <div class="text-other-color2">create an account, or contact us.</div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="buttons-holder">
+                        <a href="#" class="ybtn ybtn-accent-color">Create Your Account</a><a href="#" class="ybtn ybtn-white ybtn-shadow">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
